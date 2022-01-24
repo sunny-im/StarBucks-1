@@ -1,0 +1,499 @@
+@import url(common.css);
+
+.skipnavi {
+    position:absolute;
+    top:-50px;
+    left:0;
+    text-indent: -99999;
+    font-size: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .skipnavi li a:focus, .skipnavi li a:active {
+    position: absolute;
+    top: 50px;
+    left:0;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    text-indent: 0px;
+    font-size: 15px;
+    background-color: #000;
+    color:#fff;
+    text-decoration: underline;
+    letter-spacing: -1px;
+  }
+#wrap {
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+/* header 시작 */
+#header,#footer {
+    font: normal 13px Avenir, Arial, georgia;
+}
+#header {
+    background-color: #f6f5ef;
+    height:120px;
+    position:relative;
+}
+.main_logo {
+    padding: 20px 0;
+}
+.main_gnb .gnb_top > ul > li, .main_gnb .gnb_btm > ul > li {
+    display: inline-block;
+    font: normal 13px Avenir, Arial, georgia;
+}
+.main_gnb .gnb_top ul {
+    text-align: right;
+}
+.main_gnb .gnb_top ul li {
+    padding: 10px 15px;
+}
+.main_gnb .gnb_top ul li::after {
+    content:"";
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    top:35%;
+    left:100%;
+    position: absolute;
+}
+.main_gnb .gnb_top ul li:last-child::after {
+    background-color:transparent;
+
+}
+.main_gnb .gnb_top ul li a {
+    color:#555;
+    display:inline-block;
+}
+.main_gnb .gnb_top .gnb_icon {
+    padding: 5px 7px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    vertical-align: middle;
+    display:inline-block;
+}
+.gnb_btm > ul > li > a {
+    padding: 15px 20px 38px;
+    margin-left: -4px;
+    display:inline-block;
+    text-transform: uppercase;
+}
+.gnb_btm > ul > li > a:hover {
+    background-color: #2C2A29;
+    color:#669900;
+    text-decoration:underline;
+}
+/* gnb sub menu 시작 */
+.gnb_btm .main_lnb {
+    position:absolute;
+    top:120px;
+    left:0;
+    background-color: #2C2A29;
+    width: 100%;
+    overflow:hidden;
+    display:none;
+}
+.main_lnb .lnb_top .lnb {
+    width: 20%;
+    float:left;
+}
+.main_lnb .lnb_top{
+    padding: 20px 0 20px 0;
+}
+.main_lnb .lnb_top a {
+    color: #999;
+    line-height: 20px;
+    font-size: 11px;
+    letter-spacing: -1px;
+}
+.main_lnb .lnb_top .lnb_tit a{
+    color:#fff;
+    font-size:13px;
+    font-weight: bold;
+    display:inline-block;
+    padding-bottom:10px;
+}
+.main_lnb .lnb_story .lnb_tit a {
+    cursor: default;
+}
+.main_lnb .lnb_btm_bg {
+    background:url(../img/common/gnb_sub_txbg.jpg);
+    padding: 25px 0 20px 0;
+}
+.main_lnb .lnb_btm_bg a {
+    color:#999;
+    font-weight: bold;
+    font-size:11px;
+    letter-spacing: -1px;
+}
+.main_lnb .lnb_btm_bg a img {
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 3px;
+}
+.main_lnb .lnb_btm_bg .lnb_txt {
+    color: #64a70b;
+    font-size:11px;
+    letter-spacing:-1px;
+    line-height:20px;
+}
+/* gnb sub menu 끝 */
+
+/* header 끝 */
+
+/* section menu 시작 */
+.menu_tit {
+    padding: 22px 0;
+}
+.menu_tit ul {
+    text-align:right;
+}
+.menu_tit ul li {
+    display:inline-block;
+}
+.menu_tit ul li a {
+    font-size: 12px;
+    text-transform:uppercase;
+    vertical-align: middle;
+    display:inline-block;
+}
+/* menu_bn */
+#menu_bn {
+    background: url(../img/menu/menu_banner.jpg) no-repeat top center;
+    border-bottom: 1px solid #0d6035;
+    height: 400px;
+    position:relative;
+}
+#menu_bn .menu_refer {
+    margin-top: -47px;
+}
+#menu_bn .menu_refer .refer_product {
+    display:none;
+}
+#menu_bn .menu_refer .refer_product{
+    padding: 50px 0 50px 0;
+    background-color: #fffaf4;
+    border-bottom: 1px solid #0d6035;
+}
+#menu_bn .menu_refer .refer_product .refer_txt {
+    padding: 10px 0 30px;
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#menu_bn .menu_slider {
+    position:absolute;
+    bottom: 20px;
+    left:50%;
+}
+#menu_bn .menu_slider div {
+    display:inline-block;
+}
+#menu_bn .menu_prev, #menu_bn .menu_next {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#menu_bn .menu_prev {
+    left: 5%;
+}
+#menu_bn .menu_next {
+    left: 95%;
+}
+/* menu_bn */
+
+#menu_notice {
+    position:relative;
+}
+#menu_notice .menu_notice_bg {
+    position: absolute;
+    max-width: 1100px;
+    background: url(../img/menu/useinfo_bg2.jpg) no-repeat top center;
+    width: 100%;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#menu_notice .notice_ltxt {
+    padding: 25px 15px;
+    position:relative;
+}
+#menu_notice .notice_rtxt {
+    padding: 11px 11px 0;
+}
+#menu_notice .notice_data {
+    padding-left:20px;
+}
+#menu_notice .notice_btn {
+    position:absolute;
+    top: 15px;
+    right: 10px;
+}
+#menu_notice .notice_ltxt div, #menu_notice .notice_rtxt div{
+    display: inline-block;
+    color:#fff;
+}
+#menu_notice .notice_lbg {
+    background-color:#000;
+    height: 70px;
+}
+#menu_notice .notice_lbg {
+    margin-right:0;
+}
+#menu_notice .notice_rbg {
+    background:url(../img/menu/useinfo_bg.jpg) top center;
+    height: 70px;
+    margin-left: 1.454545%;
+}
+/* menu_notice */
+
+.menu_content p {
+    padding: 50px 0;
+}
+.menu_base_r {
+    position: absolute;
+    width:100%;
+    top: 15%;
+    left: 65%;
+}
+.menu_base_l {
+    position: absolute;
+    width:100%;
+    top: 15%;
+    left: 0;
+}
+.menu_bbtn {
+    color: #000;
+    border: 2px solid #000;
+}
+.menu_wbtn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+.menu_btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+.menu_wbtn:hover {
+    color: #000;
+    text-decoration:underline;
+    background:#fff;
+}
+.menu_bbtn:hover {
+    color: #fff;
+    text-decoration:underline;
+    background:#000;
+}
+#menu_drink {
+    background: url(../img/menu/menu_drink.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center;
+}
+#menu_food {
+    background: url(../img/menu/menu_food.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center;
+}
+#menu_product {
+    background: url(../img/menu/menu_product.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center;
+}
+#menu_card {
+    background: url(../img/menu/menu_card.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center;
+}
+#menu_story {
+    background: url(../img/menu/menu_story.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center;
+}
+.menu_cont {
+    height: 430px;
+}
+/* section menu 끝 */
+/* section drink 시작 */
+.classify_wrap {
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.classify {
+    border-bottom:1px solid #ccc;
+    padding-bottom:20px;
+}
+.classify_btn {
+    margin-top:-13px;
+}
+.classify_kinds {
+    position:relative;
+}
+.classify_wrap .classify .classify_tit {
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: -2px;
+}
+.cls_category {
+    padding: 30px 0 20px;
+}
+.cls_theme {
+    position: absolute;
+    top: 30px;
+    left: 225px;
+}
+.cls_theme a {
+    background:#f4f4f1;
+    padding: 10px 80px;
+    color: #000;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+}
+.cls_category a {
+    padding: 10px 80px;
+    background: #006633;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+}
+.cls_select .cls_select_list li{
+    display:inline-block;
+    padding-right: 20px;
+}
+.cls_select_list input[type=checkbox] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_select_list label {
+    position:relative;
+    display:inline-block;
+    padding-left:20px;
+    padding-bottom:10px;
+    font-size:14px;
+    cursor:pointer;
+}
+.cls_select_list + label::before {
+    content:'';
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    top:2.5px;
+    left:0;
+    background:url(../img/common/checkbox.jpg) no-repeat;
+}
+input [type=checkbox]:checked + label::before{
+    content:'';
+    background:url(../img/common/check.jpg) no-repeat;
+    background-size:12px 12px;
+}
+/* .cls_select_list .all_select {
+    
+} */
+
+/* section drink 끝 */
+/* footer 시작 */
+#footer {
+    background-color:#2C2A29;
+    padding: 35px 0;
+}
+#footer .fot_awards {
+    background-color: #282828;
+}
+.fot_menu {
+    position:relative;
+    padding-bottom:60px;
+}
+.fot_menu ul {
+    width: 20%;
+    float:left;
+}
+.fot_menu::after {
+    content:'';
+    position:absolute;
+    background: url(../img/common/footer_logo.png) no-repeat;
+    top:0;
+    right:0;
+    width: 14px;
+    height: 142px;
+}
+.fot_menu .fot_tit{
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 13px;
+    display:inline-block;
+}
+.fot_menu ul li a{
+    color: #fff;
+    font-size: 11px;
+    line-height: 21px;
+}
+.fot_awards ul li {
+    float:left;
+    margin-left: -16.5px;
+    padding: 20px 0 30px 0;
+}
+.fot_awards ul li:first-child {
+    margin-left:0;
+}
+.fot_awards ul li a {
+    display: inline-block;
+}
+.fot_awards ul li a img {
+    width: 90%;
+}
+.fot_fnb {
+    text-align: center;
+    padding-top:30px;
+}
+.fot_fnb .fnb_top ul li a {
+    color:#ccc;
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+    display:inline-block;
+    font-size:11px;
+    letter-spacing: -1px;
+}
+.fot_fnb .fnb_top ul li:last-child a {
+    border-right: 0;
+}
+.fot_fnb .fnb_top .fnb_policy {
+    color: #00b050;
+    font-weight: bold;
+}
+.fot_fnb .fnb_top ul li, .fot_fnb .fnb_mid ul li {
+    display:inline-block;
+}
+.fot_fnb .fnb_mid {
+    padding: 10px 0 15px 0;
+}
+.fot_fnb .fnb_mid ul li a {
+    border: 2px solid #fff;
+    padding: 7px 15px;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 3px;
+    width: 105px;
+}
+.fot_fnb .fnb_btm p {
+    padding: 10px 0;
+}
+.fot_fnb .fnb_btm p span {
+    color:#999;
+    font-size: 11px;
+    display: inline-block;
+    padding-right: 15px;
+}
+/* footer 끝 */

@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font:normal 13px Avenir, Arial, georgia; 헤더폰트 */ 
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,
+nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input {
+    outline: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  display:inline-block;
+}
+img {
+    max-width: 100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+.row::after {
+    content: "";
+    display:table;
+    clear:both;
+    height:100%;
+}
+.l_float {
+    float:left;
+}
+.r_float {
+    float:right;
+}
+.container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    position:relative;
+}
+/* -------------- grid --------------  */
+
+/* 그리드 픽셀 */
+
+/* .col-1 {
+    width: 77px;
+}
+.col-2 {
+    width: 170px;
+}
+.col-3 {
+    width: 263px;
+}
+.col-4 {
+    width: 356px;
+}
+.col-5 {
+    width: 449px;
+}
+.col-6 {
+    width: 542px;
+}
+.col-7 {
+    width: 635px;
+}
+.col-8 {
+    width: 728px;
+}
+.col-9 {
+    width: 821px;
+}
+.col-10 {
+    width: 914px;
+}
+.col-11 {
+    width: 1007px;
+}
+.col-12{
+    width: 1100px;
+
+div[class|=col] {
+    float:left;
+    margin-right: 16px;
+}
+*/
+
+.col-1 {
+    width: 7%;
+}
+.col-2 {
+    width: 15.45455%;
+}
+.col-3 {
+    width: 23.90909%;
+}
+.col-4 {
+    width: 32.36364%;
+}
+.col-5 {
+    width: 40.81818%;
+}
+.col-6 {
+    width: 49.27273%;
+}
+.col-7 {
+    width: 57.72727%;
+}
+.col-8 {
+    width: 66.18182%;
+}
+.col-9 {
+    width: 74.63636%;
+}
+.col-10 {
+    width: 83.09091%;
+}
+.col-11 {
+    width: 91.54545%;
+}
+.col-12{
+    width: 100%;
+}
+div[class|=col] {
+    float:left;
+    margin-right: 1.454545%;
+}
+div[class|=col]:last-child {
+    margin-right: 0;
+}
+li[class|=col] {
+    float:left;
+    margin-right: 1.454545%;
+}
+li[class|=col]:last-child {
+    margin-right: 0;
+}
