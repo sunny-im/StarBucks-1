@@ -8,6 +8,7 @@ body{
     font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
     letter-spacing: -1px;
     padding-top: 120px;
+    overflow-x: hidden;
 }
 ul, ol li{
     list-style: none;
@@ -373,6 +374,7 @@ a{
 #tbn_tit_link > a:last-child{
     color: #222;
 }
+/* -------------STORE 티바나 바 매장 페이지 끝(index.html)-----------------*/
 
 /* ---------------------------헤더 끝--------------------------- */
 
@@ -1182,13 +1184,104 @@ a{
 #tbn_sec1{
     background: url(../IMAGES/TEABANA/STORE/starField_visual_bg.jpg) no-repeat;
     width: 100%;
-    overflow: hidden;
+    height: 900px;
     margin: 0 auto;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
 }
 #tbn_sec1 img{
     display: block;
+}
+#tbnsec1_inner{
     margin: 0 auto;
 }
+#tbnsec1_inner img:first-child {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -260px;
+    width: 533px;
+    height: 252px;
+}
+#tbnsec1_inner img:last-child {
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -365px;
+    height: 396px;
+    width: 725px;
+}
+#between_sec {
+    background-color: #1d2683;
+    height: 40px;
+    width: 100%;
+}
+#tbn_sec2 {
+    background: url(../IMAGES/TEABANA/STORE/store_teavana_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1684px;
+    width: 100%;
+    position: relative;
+}
+
+#tbnsec2_art1 {
+    width: 100%;
+}
+#tbnsec2_art1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnsec2_art1 .img_box {
+    float: left;
+    overflow-x: hidden;
+}
+
+.img_box img {
+    max-width: 100%;
+}
+#tbnsec2_art1 .tbnsec2_cont {
+    position: relative;
+    top: 132px;
+    left: 65px;
+}
+#tbnsec1_art1 .tbnsec2_cont {
+
+    white-space: nowrap;
+}
+.tbnsec2_cont > div {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1d2682;
+    border-radius: 12px;
+    background-color: #1d2682;
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    left: 5px;
+}
+.sec2cont_tit {
+    display: inline;
+    border-bottom: 1px solid #1d2682;
+    color: #1d2682;
+    padding: 0 15px 0 5px;
+}
+.tbnsec2_cont > p:last-child {
+    color: #666;
+    font-size: 14px;
+}
+
+#tbnsec2_art2 .img_box {
+    float: right;
+    position: relative;
+    top: -635px;
+    left: 40px;
+}
+#tbnsec2_art2
 /* -----------STORE 티바나 바 매장 페이지 끝(reserve.html)-----------*/
 
 /* ---------------------------본문 끝--------------------------- */
