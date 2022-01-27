@@ -30,7 +30,7 @@
 }
 /* header 시작 */
 #header,#footer {
-    font: normal 13px Avenir, Arial, georgia;
+    font: normal 0.8rem Avenir, Arial, georgia;
 }
 #header {
     background-color: #f6f5ef;
@@ -42,7 +42,7 @@
 }
 .main_gnb .gnb_top > ul > li, .main_gnb .gnb_btm > ul > li {
     display: inline-block;
-    font: normal 13px Avenir, Arial, georgia;
+    font: normal 0.8rem Avenir, Arial, georgia;
 }
 .main_gnb .gnb_top ul {
     text-align: right;
@@ -105,13 +105,13 @@
 }
 .main_lnb .lnb_top a {
     color: #999;
-    line-height: 20px;
-    font-size: 11px;
+    line-height: 22px;
+    font-size: 0.75rem;
     letter-spacing: -1px;
 }
 .main_lnb .lnb_top .lnb_tit a{
     color:#fff;
-    font-size:13px;
+    font-size: 0.9rem;
     font-weight: bold;
     display:inline-block;
     padding-bottom:10px;
@@ -126,7 +126,7 @@
 .main_lnb .lnb_btm_bg a {
     color:#999;
     font-weight: bold;
-    font-size:11px;
+    font-size: 0.7rem;
     letter-spacing: -1px;
 }
 .main_lnb .lnb_btm_bg a img {
@@ -136,7 +136,7 @@
 }
 .main_lnb .lnb_btm_bg .lnb_txt {
     color: #64a70b;
-    font-size:11px;
+    font-size: 0.7rem;
     letter-spacing:-1px;
     line-height:20px;
 }
@@ -155,7 +155,7 @@
     display:inline-block;
 }
 .menu_tit ul li a {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-transform:uppercase;
     vertical-align: middle;
     display:inline-block;
@@ -180,7 +180,7 @@
 }
 #menu_bn .menu_refer .refer_product .refer_txt {
     padding: 10px 0 30px;
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -354,7 +354,7 @@
     padding: 10px 80px;
     color: #000;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 0.9rem;
     display: inline-block;
 }
 .cls_category a {
@@ -362,7 +362,7 @@
     background: #006633;
     color: #fff;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 0.9rem;
     display: inline-block;
 }
 .cls_select .cls_select_list li{
@@ -378,10 +378,10 @@
     display:inline-block;
     padding-left:20px;
     padding-bottom:10px;
-    font-size:14px;
+    font-size: 0.9rem;
     cursor:pointer;
 }
-.cls_select_list + label::before {
+.cls_select_list label::before {
     content:'';
     position:absolute;
     width: 12px;
@@ -391,14 +391,109 @@
     left:0;
     background:url(../img/common/checkbox.jpg) no-repeat;
 }
-input [type=checkbox]:checked + label::before{
+input[type="checkbox"]:checked + label::before{
     content:'';
     background:url(../img/common/check.jpg) no-repeat;
     background-size:12px 12px;
 }
-/* .cls_select_list .all_select {
-    
-} */
+.classify_tab {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.cls_tab_view, .cls_detail {
+    position:absolute;
+}
+.cls_tab_view {
+    width: 100%;
+    top:10px;
+    left: 0;
+}
+.cls_view_left, .cls_view_right {
+    position: absolute;
+    vertical-align: middle;
+}
+.cls_view_left {
+    top: 0;
+    left:0;
+}
+.cls_view_left a {
+    background-color: #666;
+    color:#fff;
+}
+.cls_view_left a, .cls_view_right{
+    letter-spacing: -1px;
+    padding: 6px 8px;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.cls_view_right {
+    top: 0;
+    left: 115px;
+}
+.cls_detail {
+    top:0;
+    right: 0;
+}
+.cls_detail input[type="button"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_detail .detail_select {
+    width: 263px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+}
+.cls_detail .detail_select a {
+    width: 100%;
+    font-size: 0.9rem;
+    display: inline-block;
+    background: url(../img/common/select_arrow_down.png) no-repeat 100%;
+    background-size: 12px 7px;
+}
+.cls_detail .detail_option{
+    display: none;
+}
+.cls_detail .detail_option li {
+    position: relative;
+    border:1px solid #eee;
+}
+.cls_detail .detail_option input[type=checkbox] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_detail .detail_option label {
+    position: relative;
+    display: inline-block;
+    padding-left: 55px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.cls_detail .detail_option label:first-child {
+    background:url(../img/common/mark_1.png) no-repeat 30px 10px;
+    background-size: 20px 20px;
+    height: 38px;
+    line-height: 38px;
+}
+.cls_detail .detail_option label:last-child {
+    background: url(../img/common/mark_2.png) no-repeat 30px 10px;
+    background-size: 20px 20px;
+    height: 38px;
+    line-height: 38px;
+}
+.cls_detail .detail_option label::before {
+    content:'';
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    top:12.5px;
+    left: 10px;
+    background:url(../img/common/checkbox.jpg) no-repeat;
+}
 
 /* section drink 끝 */
 /* footer 시작 */
@@ -429,13 +524,13 @@ input [type=checkbox]:checked + label::before{
 .fot_menu .fot_tit{
     text-transform: uppercase;
     padding-bottom: 8px;
-    font-size: 13px;
+    font-size: 0.75rem;
     display:inline-block;
 }
 .fot_menu ul li a{
     color: #fff;
-    font-size: 11px;
-    line-height: 21px;
+    font-size: 0.8rem;
+    line-height: 22px;
 }
 .fot_awards ul li {
     float:left;
@@ -460,7 +555,7 @@ input [type=checkbox]:checked + label::before{
     border-right: 1px solid #393939;
     padding: 0 10px;
     display:inline-block;
-    font-size:11px;
+    font-size:0.75rem;
     letter-spacing: -1px;
 }
 .fot_fnb .fnb_top ul li:last-child a {
@@ -483,7 +578,7 @@ input [type=checkbox]:checked + label::before{
     margin-right: 5px;
     font-weight: 600;
     color: #fff;
-    font-size: 11px;
+    font-size: 0.7rem;
     border-radius: 3px;
     width: 105px;
 }
@@ -492,7 +587,7 @@ input [type=checkbox]:checked + label::before{
 }
 .fot_fnb .fnb_btm p span {
     color:#999;
-    font-size: 11px;
+    font-size: 0.7rem;
     display: inline-block;
     padding-right: 15px;
 }
