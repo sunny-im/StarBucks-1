@@ -1225,32 +1225,31 @@ a{
     background-position: center center;
     height: 1684px;
     width: 100%;
-    position: relative;
+    overflow: hidden;
+}
+#tbnsec2_inner {
+    margin: 0 auto;
+    width: 1100px;
 }
 
-#tbnsec2_art1 {
-    width: 100%;
-}
 #tbnsec2_art1::after {
     content: "";
     display: block;
     clear: both;
 }
-#tbnsec2_art1 .img_box {
-    float: left;
-    overflow-x: hidden;
-}
-
-.img_box img {
+#tbnsec2_art1 img {
     max-width: 100%;
+    width: 800px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: -365px;
+}
+.tbnsec2_cont {
+    line-height: 1.6;
 }
 #tbnsec2_art1 .tbnsec2_cont {
-    position: relative;
-    top: 132px;
-    left: 65px;
-}
-#tbnsec1_art1 .tbnsec2_cont {
-
     white-space: nowrap;
 }
 .tbnsec2_cont > div {
@@ -1263,6 +1262,7 @@ a{
     position: relative;
     top: 11px;
     left: 5px;
+    box-sizing: border-box;
 }
 .sec2cont_tit {
     display: inline;
@@ -1274,14 +1274,152 @@ a{
     color: #666;
     font-size: 14px;
 }
-
-#tbnsec2_art2 .img_box {
+#tbnsec2_art1 > .tbnsec2_cont {
     float: right;
     position: relative;
-    top: -635px;
-    left: 40px;
+    top: -350px;
+    left: -35px;
 }
-#tbnsec2_art2
+#tbnsec2_art2 img {
+    float: right;
+    width: 940px;
+    display: block;
+    position: relative;
+    top: -755px;
+    margin-right: -440px;
+}
+#tbnsec2_art2 > .tbnsec2_cont {
+    position: relative;
+    left: 155px;
+    top: -60px;
+}
+#tbnsec2_art2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnsec2_art2 {
+    height: 165px;
+}
+#tbnsec2_art3 > img {
+    position: relative;
+    left: 50px;
+}
+#tbnsec2_art3{
+    position: relative;
+}
+#tbnsec2_art3 > .tbnsec2_cont {
+    position: absolute;
+    top: 220px;
+    right: 100px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > .sec2cont_tit {
+    padding-right: 280px;
+    white-space: nowrap;
+}
+#tbnsec2_art4 > .tbnsec2_cont > div {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+#tbnsec2_art4 > .tbnsec2_cont{
+    position: relative;
+    top: 125px;
+    left: 55px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > .seccont_tit{
+    letter-spacing: -2.3px;
+}
+#tbnsec2_art4 > .tbnsec2_cont p:last-child{
+    letter-spacing: -1.7px;
+}
+#tbnsec2_art4 > .tbnsec2_cont > a {
+    background: url(../IMAGES/TEABANA/STORE/sf_btn_more.png) no-repeat;
+    display: block;
+    float: right;
+    width: 53px;
+    height: 53px;
+    text-indent: -9999px;
+    position: relative;
+    right: 53px;
+    z-index: 2;
+}
+#tbnsec2_art4 img {
+    display: block;
+    float: right;
+    position: relative;
+    top: -535px;
+    right: -113px;
+    z-index: 1;
+}
+#tbnsec2_art4::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#tbnstore_ber{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #006633;
+
+}
+
+#tbnstore_inner ul {
+    padding: 25px 0;
+}
+#tbnstore_inner ul li{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding-right:10px;
+}
+#tbnstore_inner ul li img {
+    width: 43px;
+}
+#tbnstore_inner ul li:nth-child(2) {
+    color: #fff;
+    font-family:'Arial';
+    letter-spacing: 0;
+    font-size: 18px;
+}
+#tbnstore_inner ul li:last-child {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 30px;
+}
+#resstore_inner ul li:last-child::before {
+    content: "|";
+    color: #575454;
+    padding-right: 10px;
+}
+#tbnstore_inner ul:first-child {
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-left: -570px;
+}
+#tbnstore_inner ul:last-child {
+    float: right;
+    position: relative;
+    right: 50%;
+    margin-right: -510px;
+}
+#tbnstore_inner ul li label {
+    font-size: 16px;
+}
+#tbnstore_inner ul li select{
+    width: 210px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #444;
+    font-family: 'ngb';
+    box-sizing: border-box;
+}
+#tbnstore_ber::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 /* -----------STORE 티바나 바 매장 페이지 끝(reserve.html)-----------*/
 
 /* ---------------------------본문 끝--------------------------- */
