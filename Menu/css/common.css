@@ -77,6 +77,11 @@ img {
     margin: 0 auto;
     position:relative;
 }
+.header_inner {
+    max-width: 1100px;
+    height:100%;
+    margin: 0 auto;
+}
 /* -------------- grid --------------  */
 
 /* 그리드 픽셀 */
@@ -166,13 +171,13 @@ div[class|=col] {
 div[class|=col]:last-child {
     margin-right: 0;
 }
-li[class|=col] {
+/* li[class|=col] {
     float:left;
     margin-right: 1.454545%;
 }
 li[class|=col]:last-child {
     margin-right: 0;
-}
+} */
 .flex_row {
     display:flex;
     justify-content: space-between;
@@ -185,16 +190,26 @@ li[class|=col]:last-child {
 .menu_each_content {
     padding-bottom: 50px;
 }
+.menu_product {
+    padding-bottom: 50px;
+} 
 .menu_product ul {
-    padding: 15px 0;
+    padding: 20px 0;
 }
-.menu_product ul li {
-    width: 23%;
+.menu_product ul li, .refer_product ul li {
+    width: 23.91%;
+    float:left;
+    margin-right: 1.454545%;
+}
+.menu_product ul li:last-child, .refer_product ul li:last-child {
+    margin-right: 0;
 }
 .product_tit {
     text-align: center;
     padding: 15px 0;
     font-size:0.9rem;
+    letter-spacing: -2px;
+    color: #444;
 }
 .common_tit {
     font-size:1.1rem;
@@ -202,6 +217,9 @@ li[class|=col]:last-child {
     letter-spacing: -1px;
     vertical-align: text-bottom;
     margin-right:10px;
+}
+.common_tit:hover {
+    text-decoration: underline;
 }
 .decaf_logo {
     width: 45px;
@@ -214,4 +232,14 @@ li[class|=col]:last-child {
 .menu_common_tit {
     background-color: #f4f4f2;
     padding: 10px;
+}
+.menu_product .menu_img_box{
+    overflow:hidden;
+}
+.menu_product .menu_img {
+    display:inline-block;
+    transition: all ease-in 0.5s;
+}
+.menu_product .menu_img_box:hover .menu_img {
+    transform: scale(1.1);
 }
