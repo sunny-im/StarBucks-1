@@ -187,6 +187,199 @@ li[class|=col]:last-child {
 /* -------------- grid --------------  */
 
 /* 메뉴 음료, 푸드, 상품, 카드 공통 */
+
+/* 분류보기 탭 공통 */
+.classify_wrap {
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.classify {
+    border-bottom:1px solid #ccc;
+    padding-bottom:20px;
+}
+.classify_btn {
+    margin-top:-13px;
+}
+.classify_kinds {
+    position:relative;
+}
+.classify_wrap .classify .classify_tit {
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: -2px;
+}
+.cls_category {
+    padding: 30px 0 20px;
+}
+.cls_theme {
+    position: absolute;
+    top: 30px;
+    left: 225px;
+}
+.cls_theme a {
+    background:#f4f4f1;
+    padding: 10px 80px;
+    color: #000;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+.classify_kinds .theme_img {
+    display:none;
+}
+.classify_kinds .theme_img img {
+    padding: 10px 5px 0 0;
+}
+.cls_category a {
+    padding: 10px 80px;
+    background: #006633;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+.cls_select .cls_select_list li{
+    display:inline-block;
+    padding-right: 20px;
+}
+.cls_select_list input[type=checkbox] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_select_list label {
+    position:relative;
+    display:inline-block;
+    padding-left:20px;
+    padding-bottom:10px;
+    font-size: 0.9rem;
+    cursor:pointer;
+}
+.cls_select_list label::before {
+    content:'';
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    top:2.5px;
+    left:0;
+    background:url(../img/common/checkbox.jpg) no-repeat;
+}
+input[type="checkbox"]:checked + label::before{
+    content:'';
+    background:url(../img/common/check.jpg) no-repeat;
+    background-size:12px 12px;
+}
+.classify_tab {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.cls_tab_view, .cls_detail {
+    position:absolute;
+}
+.cls_tab_view {
+    width: 100%;
+    top:10px;
+    left: 0;
+}
+.cls_view_left, .cls_view_right {
+    position: absolute;
+    vertical-align: middle;
+}
+.cls_view_left {
+    top: 0;
+    left:0;
+}
+.cls_view_left a {
+    background-color: #666;
+    color:#fff;
+}
+.cls_view_left a, .cls_view_right a{
+    letter-spacing: -1px;
+    padding: 5px 8px 7px;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.cls_view_txt {
+    vertical-align: text-bottom;
+}
+.cls_view_txt:hover {
+    text-decoration: underline;
+}
+.cls_category:hover a, .cls_theme:hover a{
+    text-decoration: underline;
+}
+.cls_view_right {
+    top: 0;
+    left: 115px;
+}
+.cls_detail {
+    top:0;
+    right: 0;
+}
+.cls_detail input[type="button"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_detail .detail_select {
+    width: 263px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+}
+.cls_detail .detail_select a {
+    width: 100%;
+    font-size: 0.9rem;
+    display: inline-block;
+    background: url(../img/common/select_arrow_down.png) no-repeat 100%;
+    background-size: 12px 7px;
+}
+.cls_detail .detail_option{
+    display: none;
+}
+.cls_detail .detail_option li {
+    position: relative;
+    border:1px solid #eee;
+}
+.cls_detail .detail_option input[type=checkbox] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.cls_detail .detail_option label {
+    position: relative;
+    display: inline-block;
+    padding-left: 55px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.cls_detail .detail_option label:first-child {
+    background:url(../img/common/mark_1.png) no-repeat 30px 10px;
+    background-size: 20px 20px;
+    height: 38px;
+    line-height: 38px;
+}
+.cls_detail .detail_option label:last-child {
+    background: url(../img/common/mark_2.png) no-repeat 30px 10px;
+    background-size: 20px 20px;
+    height: 38px;
+    line-height: 38px;
+}
+.cls_detail .detail_option label::before {
+    content:'';
+    position:absolute;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    top:12.5px;
+    left: 10px;
+    background:url(../img/common/checkbox.jpg) no-repeat;
+}
+/* 분류보기 탭 공통 */
+
+/* 메뉴 제품 사진 & 제목 공통 */
 .menu_each_content {
     padding-bottom: 50px;
 }
@@ -194,7 +387,7 @@ li[class|=col]:last-child {
     padding-bottom: 50px;
 } 
 .menu_product ul {
-    padding: 20px 0;
+    padding: 25px 0 15px;
 }
 .menu_product ul li, .refer_product ul li {
     width: 23.91%;
@@ -210,6 +403,9 @@ li[class|=col]:last-child {
     font-size:0.9rem;
     letter-spacing: -2px;
     color: #444;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .common_tit {
     font-size:1.1rem;
@@ -217,6 +413,9 @@ li[class|=col]:last-child {
     letter-spacing: -1px;
     vertical-align: text-bottom;
     margin-right:10px;
+}
+.common_titbox {
+    padding: 10px 0;
 }
 .common_tit:hover {
     text-decoration: underline;
@@ -231,10 +430,17 @@ li[class|=col]:last-child {
 }
 .menu_common_tit {
     background-color: #f4f4f2;
-    padding: 10px;
+    padding: 10px 15px;
 }
 .menu_product .menu_img_box{
     overflow:hidden;
+    position: relative;
+}
+.menu_product .menu_text_box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: default;
 }
 .menu_product .menu_img {
     display:inline-block;
@@ -243,3 +449,41 @@ li[class|=col]:last-child {
 .menu_product .menu_img_box:hover .menu_img {
     transform: scale(1.1);
 }
+
+/* 메뉴 제품 사진 & 제목 공통 */
+
+/* 각 메뉴 제품 영양정보 공통 */
+
+.product_detail table {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 60px 0;
+}
+.product_detail thead {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #222;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.product_detail tbody {
+    font-size: 0.9rem;
+    color: #666;
+}
+.product_detail tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.product_detail th,td {
+    padding: 15px;
+    text-align: center;
+}
+.product_detail td:first-child {
+    letter-spacing: -1.5px;
+}
+.product_detail {
+    display:none;
+}
+/* 각 메뉴 제품 영양정보 공통 */
+
+/* 메뉴 음료, 푸드, 상품, 카드 공통 */
