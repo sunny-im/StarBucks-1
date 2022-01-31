@@ -333,10 +333,349 @@
     height: 430px;
 }
 /* section menu 끝 */
-/* section drink 시작 */
 
+/* section 나이트로 콜브 브루 시작  */
+#nitro .nitro_bg {
+    background: url(../img/nitro_page/img/nitro_bn_bg.jpg) no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 1100px;
+    position:relative;
+}
+#nitro .nitro_mainBg {
+    background: url(../img/nitro_page/img/nitro_main.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 1130px;
+    height: 1012px;
+    top: 8%;
+    left: 28%;
 
-/* section drink 끝 */
+}
+#nitro .nitro_tit {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding: 200px 0 0 50px;
+}
+#nitro .nitro_tit li:nth-child(2) {
+    padding: 50px 0;
+}
+#nitro .nitro_videoTxt {
+    height: 100%;
+    padding: 111px 20px 0;
+}
+#nitro .nitro_videoBox {
+    border: 3px solid #d67e42;
+    background: #272525;
+}
+#nitro .nitro_line {
+    width: 30px;
+    height: 1px;
+    background-color: #d67e42;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#nitro .nitro_txt {
+    color: #d67e42;
+    white-space: pre-line;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+#nitro .nitro_introBg {
+    background: url(../img/nitro_page/img/nitro_intro_bg.jpg) no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 1160px;
+    position:relative;
+    padding: 30px 0;
+}
+#nitro .intro_mainTxt {
+    text-align: center;
+}
+#nitro .intro_mainTxt li:nth-child(2){
+    border-top: 0.5px solid #969595;
+    display:inline-block;
+}
+#nitro .nitro_motion div {
+    margin: 0 auto;
+}
+#nitro .intro_subImg01 {
+    background: url(../img/nitro_page/img/nitro_intro_img01.png) no-repeat center;
+    width: 100%;
+    height: 288px;
+    position:relative;
+}
+#nitro .intro_subImg01::after {
+    content:'';
+    background:url(../img/nitro_page/text/nitro_intro_stxt01.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 52%;
+    top: 33%;
+}
+#nitro .intro_subImg02 {
+    background: url(../img/nitro_page/img/nitro_intro_img02.png) no-repeat;
+    width: 29px;
+    height: 26px;
+    position: relative;
+    top: -25px;
+}
+#nitro .intro_subImg03 {
+    background: url(../img/nitro_page/img/nitro_intro_img03.png) no-repeat;
+    width: 18px;
+    height: 62px;
+    position:relative;
+    top: -27px;
+}
+#nitro .intro_subImg04 {
+    background: url(../img/nitro_page/img/nitro_intro_cup1.jpg) no-repeat center;
+    width: 100%;
+    height: 329px;
+    position: relative;
+    top: -30px;
+}
+#nitro .intro_subImg04::before {
+    content:'';
+    background:url(../img/nitro_page/text/nitro_intro_stxt02.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 15%;
+    top: -22%;
+}
+#nitro .intro_subImg04::after {
+    content:'';
+    background:url(../img/nitro_page/text/nitro_intro_stxt03.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 53%;
+    top: 22%;
+}
+#nitro .nitro_contBg01 {
+    background: url(../img/nitro_page/img/nitro_cont01.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#nitro .nitro_contTxt01 {
+    background: url(../img/nitro_page/text/nitro_cont_txt1.png) no-repeat;
+    width: 261px;
+    height: 115px;
+    position: absolute;
+    top: 32%;
+    left: 20%;
+}
+#nitro .nitro_contBg02 {
+    background: url(../img/nitro_page/img/nitro_cont02.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#nitro .nitro_contTxt02 {
+    background: url(../img/nitro_page/text/nitro_cont_txt2.png) no-repeat;
+    width: 282px;
+    height: 115px;
+    position: absolute;
+    top: 32%;
+    left: 57%;
+}
+#nitro .nitro_contBg03 {
+    background: url(../img/nitro_page/img/nitro_cont03.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#nitro .nitro_contTxt03 {
+    background: url(../img/nitro_page/text/nitro_cont_txt3.png) no-repeat;
+    width: 216px;
+    height: 114px;
+    position: absolute;
+    top: 32%;
+    left: 20%;
+}
+#nitro .nitro_typeBg {
+    background: url(../img/nitro_page/img/nitro_typeBg.jpg) no-repeat center;
+    background-size:cover;
+    width: 100%;
+    height: 813px;
+    text-align: center;
+}
+#nitro .nitro_typeTxt {
+    padding: 100px 0 50px;
+}
+#nitro .nitro_typeImg li{
+    display:inline-block;
+    padding-right: 50px;
+}
+#nitro .nitro_typeImg li:last-child{
+    padding-right: 0;
+}
+#nitro .nitro_mapImg {
+    background: url(../img/common/map.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 630px;
+}
+/* section 나이트로 콜브 브루 끝  */
+
+/* section 콜드 브루 시작 */
+#coldbrew .coldbrew_Bg {
+    background: url(../img/coldbrew_page/img/cold_main_bg.jpg) no-repeat center;
+    background-size: cover; 
+    width: 100%;
+    height: 1060px;
+}
+#coldbrew .coldbrew_tit {
+    text-align: center;
+    padding-top: 110px;
+}
+#coldbrew .coldbrew_btn a{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    text-indent: -9999px;
+    top: 65%;
+    left: 65%;
+    cursor: pointer;
+}
+#coldbrew .coldbrew_contBg01 {
+    background: url(../img/coldbrew_page/img/cold_cont01.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#coldbrew .coldbrew_contTit01 {
+    background: url(../img/coldbrew_page/text/cold_cont_tit1.png) no-repeat;
+    width: 496px;
+    height: 28px;
+    position: absolute;
+    top: 32%;
+    left: 55%;
+}
+#coldbrew .coldbrew_contTxt01 {
+    background: url(../img/coldbrew_page/text/cold_cont_txt1.png) no-repeat;
+    width: 393px;
+    height: 68px;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
+#coldbrew .coldbrew_contBg02 {
+    background: url(../img/coldbrew_page/img/cold_cont02.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#coldbrew .coldbrew_contTit02 {
+    background: url(../img/coldbrew_page/text/cold_cont_tit2.png) no-repeat;
+    width: 496px;
+    height: 28px;
+    position: absolute;
+    top: 32%;
+    left: 0;
+}
+#coldbrew .coldbrew_contTxt02 {
+    background: url(../img/coldbrew_page/text/cold_cont_txt2.png) no-repeat;
+    width: 324px;
+    height: 92px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+#coldbrew .coldbrew_contBg03 {
+    background: url(../img/coldbrew_page/img/cold_cont03.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    position:relative;
+}
+#coldbrew .coldbrew_contTit03 {
+    background: url(../img/coldbrew_page/text/cold_cont_tit3.png) no-repeat;
+    width: 150px;
+    height: 28px;
+    position: absolute;
+    top: 42%;
+    left: 55%;
+}
+#coldbrew .coldbrew_contTxt03 {
+    background: url(../img/coldbrew_page/text/cold_cont_txt3.png) no-repeat;
+    width: 533px;
+    height: 19px;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+#coldbrew .coldbrew_contBg04 {
+    background: url(../img/coldbrew_page/img/cold_cont04.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 570px;
+    position:relative;
+    background-attachment: fixed;
+}
+#coldbrew .coldbrew_contTit04 {
+    background: url(../img/coldbrew_page/text/cold_cont_tit4.png) no-repeat center;
+    width: 647px;
+    height: 162px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#coldbrew .coldbrew_contTxt04 {
+    background: url(../img/coldbrew_page/text/cold_cont_txt4.png) no-repeat;
+    width: 720px;
+    height: 82px;
+    position:absolute;
+    top:67%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#coldbrew .coldbrew_infoBg {
+    background: url(../img/coldbrew_page/img/cold_info_bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#coldbrew .coldbrew_infoImg {
+    padding: 100px 20px;
+}
+#coldbrew .coldbrew_typeBg {
+    background: url(../img/coldbrew_page/img/coldtype_Bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 813px;
+    text-align: center;
+}
+#coldbrew .coldbrew_typeTxt {
+    padding: 100px 0 50px;
+}
+#coldbrew .coldbrew_typeImg li{
+    display:inline-block;
+    padding-right: 50px;
+}
+#coldbrew .coldbrew_typeImg li:last-child{
+    padding-right: 0;
+}
+#coldbrew .coldbrew_mapImg {
+    background: url(../img/coldbrew_page/img/coldbrew_map.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 630px;
+}
+/* section 콜드 브루 끝 */
+
 /* footer 시작 */
 #footer {
     background-color:#2C2A29;
