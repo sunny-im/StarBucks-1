@@ -530,6 +530,9 @@ a{
 /* ---------------------------본문 시작--------------------------- */
 
 /* -------------------STORE main 페이지 시작(index.html)-----------------*/
+.m_btxt {
+    display: none;
+}
 #store_area{
     width: 100%;
     height:430px;
@@ -832,7 +835,12 @@ a{
 #dt_sec2{
     width: 100%;
     overflow: hidden;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: #f4f4f2;
+}
+#m_dt_track {
+    display: none;
 }
 #dtsec2_inner{
     margin: 0 auto;
@@ -846,12 +854,15 @@ a{
     padding-top: 40px;
     margin-bottom: 25px;
 }
+#dtsec2_inner img {
+    width: 40%;
+}
 #dtsec2_cont{
     float: right;
     padding-left: 30px;
     display: block;
     white-space: nowrap;
-    width: 520px;
+    width: 55%;
 }
 #dtsec2_cont > p:first-child{
     color: #222;
@@ -1653,7 +1664,7 @@ footer{
     font-size: 12px;
     letter-spacing: 0;;
 }
-
+/* -------------------STORE main 페이지 반응형 시작(index.html)-----------------*/
 @media screen and (max-width:1099px) {
     #tit_inner {
         max-width: 961px;
@@ -1845,16 +1856,23 @@ footer{
     }
 }
 @media screen and (max-width: 640px) {
+    
     #tit_link {
         display: none;
     }
     #info_area {
         height: auto;
-        
+        overflow: hidden;
         background: none;
     }
     #info_inner {
         margin: 0;
+    }
+    #eventlink_box {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
     }
     #info_left {
         width: 100%;
@@ -1866,6 +1884,7 @@ footer{
         width: 100%;
         display: block;
         clear: both;
+        position: relative;
     }
     .info_img {
         display: none;
@@ -1897,5 +1916,156 @@ footer{
     }
     #info_right h2 {
         right: 15px;
+    }
+    .btxt{
+        display: none;
+    }
+    .m_btxt {
+        display: block;
+    }
+    #store_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bn1_171109.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #store_cont {
+        float: none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    .m_btxt img {
+        width: 300px;
+        height: 123px;
+    }
+    #store_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #dt_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #dt_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #dt_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #res_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg3.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #res_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #res_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+    #com_area {
+        height: 0;
+        padding-top: calc(1090/640*100%);
+        background: url(../IMAGES/MAIN/STORE/m_store_bimg4.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #com_cont {
+        float: none;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    #com_cont a {
+        margin: 35px 0 0 90px;
+        font-size: 14px;
+    }
+}
+/* -------------------STORE main 페이지 반응형 끝(index.html)-----------------*/
+
+/* -------------------STORE dt 페이지 반응형 시작(index.html)-----------------*/
+@media screen and (max-width:1099px) {
+    #dtSec1_inner {
+        max-width: 961px;
+    }
+    #dt_inner {
+        max-width: 961px;
+    }
+    #dtsec2_inner {
+        max-width: 961px;
+    }
+    #dtsec2_cont {
+        white-space: normal;
+    }
+    #dtSec1_inner img {
+        width: 100%;
+        padding: 0 18px;
+    }
+    #dtsec2_inner > img {
+        width: 48%;
+    }
+    #dtsec2_cont {
+        width: 48%;
+    }
+    #dtstore_inner {
+        max-width: 961px;
+    }
+    #dtstore_inner ul li img {
+        width: 212px;
+        height: 66px;
+    }
+    #dtstore_inner ul li {
+        font-size: 14px;
+    }
+    #event_inner {
+        max-width: 961px;
+    }
+    .left_arrow, .right_arrow {
+        width: 16px;
+        height: 27px;
+        background-size: cover
+    }
+    #event_inner ul {
+        margin: 0 auto;
+    }
+    #event_inner ul li {
+        margin: 0 13px 0 30px;
+    }
+}
+@media screen and (max-width:960px) and (min-width:641px) {
+    #dt_tit_link {
+        display: none;
+    }
+    #dt_inner {
+        display: none;
+    }
+    #m_dt_track {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: block;
     }
 }
