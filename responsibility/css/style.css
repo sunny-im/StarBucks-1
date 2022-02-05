@@ -141,7 +141,7 @@ responsibility
 .newsArea {
     height: 70px;
     width: 100%;
-    background: url(/img/newsArea_bg2.jpeg)no-repeat;
+    background: url(/responsibility/img/newsArea_bg2.jpeg)no-repeat;
     background-size: 100%;
     display: flex;
     justify-content: baseline;
@@ -199,7 +199,7 @@ responsibility
 
 /* 활동 1 */
 .responsibility_01{
-    background: url(/img/responsibility01.jpeg) 80% 50% no-repeat;
+    background: url(/responsibility/img/responsibility01.jpeg) 80% 50% no-repeat;
     background-size: cover;
     height: 430px;
     width: 100%;
@@ -236,7 +236,7 @@ responsibility
 }
 /* 활동 2 */
 .responsibility_02{
-    background: url(/img/responsibility02.jpeg) 20% 50% no-repeat;
+    background: url(/responsibility/img/responsibility02.jpeg) 20% 50% no-repeat;
     background-size: cover;
     height: 430px;
     width: 100%;
@@ -276,7 +276,7 @@ responsibility
 }
 /* 활동 3 */
 .responsibility_03{
-    background: url(/img/responsibility03.jpeg) 80% 50% no-repeat;
+    background: url(/responsibility/img/responsibility03.jpeg) 80% 50% no-repeat;
     background-size: cover;
     height: 430px;
     width: 100%;
@@ -313,7 +313,7 @@ responsibility
 }
 /* 활동 4 */
 .responsibility_04{
-    background: url(/img/responsibility04.jpeg) 20% 50% no-repeat;
+    background: url(/responsibility/img/responsibility04.jpeg) 20% 50% no-repeat;
     background-size: cover;
     height: 430px;
     width: 100%;
@@ -352,7 +352,7 @@ responsibility
 }
 /* 활동 5 */
 .responsibility_05{
-    background: url(/img/responsibility05.jpeg) 80% 50% no-repeat;
+    background: url(/responsibility/img/responsibility05.jpeg) 80% 50% no-repeat;
     background-size: cover;
     height: 430px;
     width: 100%;
@@ -417,7 +417,7 @@ footer
 .footer_menu_01_inner{
     display: flex;
     flex-wrap: wrap;
-    background: url(/img/footer_logo.png) right 8px no-repeat;
+    background: url(/responsibility/img/footer_logo.png) right 8px no-repeat;
 }
 
 .footer_menu_01 .footer_menu_01_inner ul{
