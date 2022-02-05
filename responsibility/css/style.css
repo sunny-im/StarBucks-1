@@ -1,0 +1,511 @@
+/* common */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    vertical-align: baseline;
+}
+
+body {
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+###############
+header
+############### 
+*/
+.nav_wrap {
+    display: flex;
+    background-color: #f6f5ef;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #e5e5e5;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.nav_wrap_inner {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav_wrap_inner h1 {
+    display: flex;
+}
+
+.nav_category ul {
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+}
+
+.nav_category a {
+    color: #333;
+}
+
+.nav_first ul {
+    padding-right: 30px;
+    align-items: center;
+}
+
+.nav_first li {
+    margin: 0 10px;
+}
+
+.nav_first a {
+    font-size: .8rem;;
+}
+
+.search_btn {
+    display: flex;
+    border: 1px solid #333;
+    width: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.nav_second li {
+    padding: 0 15px;
+}
+
+.nav_second a {
+    font-size: .85rem;
+}
+
+/* sub title */
+
+.sub_tit_wrap {
+    display: flex;
+}
+
+.sub_tit_inner h2 {
+    padding-top: 30px;
+}
+
+.sub_tit_inner {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: 1100px;
+    height: 91px;
+    justify-content: space-between;
+}
+
+.smap {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    right: 0;
+    top: 60px;
+
+}
+
+.smap li {
+    padding: 0 2.5px;
+}
+
+.smap a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 0.8rem;
+}
+/* 
+###############
+responsibility
+############### 
+*/
+
+/* newsArea */
+
+.newsArea {
+    height: 70px;
+    width: 100%;
+    background: url(/img/newsArea_bg2.jpeg)no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin: 0 auto;
+}
+
+.newsArea_news {
+    width: 63%;
+    height: 70px;
+}
+
+.newsArea_news .bodo{
+    margin-top: 26px;
+}
+
+.newsArea_news .bodo img {
+    margin-left: 70px;
+}
+
+.newsArea_news .bodo p a {
+    float: left;
+    color: #cccccc;
+    font-size: 13px;
+    margin-left: 150px;
+    margin-top: -20px;
+    
+}
+
+.newsArea_news>p {
+    float: right;
+    margin-top: -28px;
+}
+
+.newsArea_rewards {
+    display: flex;
+    width: 37%;
+    height: 70px;
+}
+
+.newsArea_rewards .app{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.newsArea_rewards .txt{
+    margin-left: 15px;
+    margin-top: 20px;
+} 
+
+.newsArea_rewards .plus_btn {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+
+/* 활동 1 */
+.responsibility_01{
+    background: url(/img/responsibility01.jpeg) 80% 50% no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+.responsibility_01_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.responsibility_01_text {
+    top: 124px;
+    width: 410px;
+    position: absolute;
+}
+
+.responsibility_01_btn {
+    position: absolute;
+    border: 2px solid #222;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    top: 262px;
+    width: 121px;
+}
+
+.responsibility_01_btn a{
+    color: #222;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+/* 활동 2 */
+.responsibility_02{
+    background: url(/img/responsibility02.jpeg) 20% 50% no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+.responsibility_02_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.responsibility_02_text {
+    left: 700px;
+    top: 77px;
+    width: 416px;
+    position: absolute;
+
+}
+
+.responsibility_02_btn {
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    top: 262px;
+    width: 121px;
+    left: 700px;
+}
+
+.responsibility_02_btn a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+/* 활동 3 */
+.responsibility_03{
+    background: url(/img/responsibility03.jpeg) 80% 50% no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+.responsibility_03_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.responsibility_03_text {
+    top: 124px;
+    width: 410px;
+    position: absolute;
+}
+
+.responsibility_03_btn {
+    position: absolute;
+    border: 2px solid #222;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    top: 262px;
+    width: 121px;
+}
+
+.responsibility_03_btn a{
+    color: #222;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+/* 활동 4 */
+.responsibility_04{
+    background: url(/img/responsibility04.jpeg) 20% 50% no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+.responsibility_04_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.responsibility_04_text {
+    left: 700px;
+    top: 127px;
+    width: 428px;
+    position: absolute;
+}
+
+.responsibility_04_btn {
+    left: 700px;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    top: 264px;
+    width: 121px;
+}
+
+.responsibility_04_btn a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+/* 활동 5 */
+.responsibility_05{
+    background: url(/img/responsibility05.jpeg) 80% 50% no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+.responsibility_05_inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.responsibility_05_text {
+    top: 124px;
+    width: 410px;
+    position: absolute;
+}
+
+.responsibility_05_btn {
+    position: absolute;
+    border: 2px solid #222;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    top: 262px;
+    width: 121px;
+}
+
+.responsibility_05_btn a{
+    color: #222;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/* 
+###############
+sharedPlanet
+############### 
+*/
+
+
+
+
+/* 
+###############
+footer
+############### 
+*/
+.footer {
+    padding: 32px 0 35px 0;
+    background: #2c2a29;
+}
+
+.footer_menu_01 {
+    display: flex;
+    width: 1182px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_menu_01_inner{
+    display: flex;
+    flex-wrap: wrap;
+    background: url(/img/footer_logo.png) right 8px no-repeat;
+}
+
+.footer_menu_01 .footer_menu_01_inner ul{
+    vertical-align: top;
+    margin-bottom: 60px;
+}
+
+.footer_menu_01 .footer_menu_01_inner ul li{
+    width: 220px;
+}
+.footer_menu_01_inner ul li.tlt a{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.footer_menu_01_inner ul li a{
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.footer_menu_02 {
+    background: #282828;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer_menu_02_inner ul{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer_menu_03 {
+    position: relative;
+    text-align: center;
+}
+
+.footer_menu_03_inner_first ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.footer_menu_03 .footer_menu_03_inner_first ul a{
+    color: #ccc;
+    border-right: 1px solid #393939;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.footer_menu_03_inner_first ul li .color {
+    color: #00b050;
+}
+
+.footer_menu_03 .footer_menu_03_inner_first ul .hot-line {
+    border: none;
+}
+
+.footer_menu_03_inner_second{
+    padding-bottom: 10px;
+}
+
+.footer_menu_03_inner_second a{
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 2px 0 3px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px
+}
+
+
+
+.footer_menu_03_inner_third {
+    padding: 20px 0;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.footer_menu_03_inner_third ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu_03_inner_third ul li {
+    padding-right: 20px;
+}
